@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>BÇü</h2>
+<h1>BÇü</h1>
 </body>
 </html>
