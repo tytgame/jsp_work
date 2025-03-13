@@ -19,14 +19,14 @@
 <form action="loginProcess.jsp" method="post">
 	<table border="1" align="center">
 		<tr>
-			<td colspan="2" align="center"><h2>Login</h2></td>
+			<td colspan="2" align="center"><h2>로그인</h2></td>
 		</tr>
 		<tr>
-			<td width="50px" align="center">ID</td>
+			<td width="50px" align="center">아이디</td>
 			<td><input name="id" required></td>
 		</tr>	
 		<tr>
-			<td align="center">PW</td>
+			<td align="center">비밀번호</td>
 			<td><input name="pwd" required></td>
 		</tr>
 		<tr>

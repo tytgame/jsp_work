@@ -22,4 +22,30 @@ create table member(
 );
 commit;
 
-insert into member values('yu','1234','유예성','1','981111','yuyeseong@naver.com','12345','서울특별시 강남구 한국빌딩','801호'
+insert into member values('yu','1234','유예성','1','981111','yuyeseong@naver.com','12345','서울특별시 강남구 한국빌딩','801호');
+
+create table votelist(
+    num number primary key,
+    question varchar2(200) not null,
+    sdate date,
+    edate date,
+    wdate date default sysdate,
+    type number default 1 not null,
+    active number default 1
+);
+commit;
+
+drop table votelist;
+
+create table voteitem(
+    listnum number,
+    itemnum number,
+    item varchar2(50),
+    count number default 0,
+    constraint voteitem_pk primary key(listnum, itemnum)
+);
+commit;
+
+create sequence seq_vote nocache;
+
+
