@@ -1,9 +1,11 @@
-package ch09;
+package vote;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+
+import db.DBConnectionMgr;
 
 public class VoteDao {
 	DBConnectionMgr pool = DBConnectionMgr.getInstance();
@@ -204,7 +206,7 @@ public class VoteDao {
 			return count;
 		}
 		
-		// voteitem의 각 항목의 count 가져오기
+	// voteitem의 각 항목의 count 가져오기
 		public ArrayList<VoteItem> getView(int num) {
 			ArrayList<VoteItem> alist = new ArrayList<VoteItem>();
 			

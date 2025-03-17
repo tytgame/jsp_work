@@ -1,0 +1,67 @@
+  li {
+    float: right;
+  }
+  .nav {
+    list-style-type: none;
+  }
+  nav a {
+    float: right;
+    text-align: center;
+    width: 500px;
+    height: 100px;
+    color: black;
+    /* font-size: 18px; */
+    margin-top: 100px;
+  }
+  #logo {
+    width: 100px;
+    float: left;
+    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-left: 80px;
+  }
+  #img02 {
+    width:100%;
+    /* margin: 0 auto;
+    display: block; */
+  }
+  .notice {
+    float: left;
+    text-align: center;
+    width:50%;
+  }
+  .partner {
+    float: right;
+    text-align: center;
+    width: 50%;
+  }
+  .table {
+    margin-left: 30%;
+    height: 300px;
+  }
+  #img03 {
+    width: 1000px;
+    height: 300px;
+  }
+
+
+
+
+  .icon {
+    clear: both;
+    text-align: center;
+  }
+
+  /* 하단 3개 이미지 div 클래스 */
+  .imgbtn {
+    display: inline-block;
+    width: 20%;
+    height: 20%;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+
+  footer {
+    background-color: rgb(56, 56, 168);
+    color: white;
+  }
