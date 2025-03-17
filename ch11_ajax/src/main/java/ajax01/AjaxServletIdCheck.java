@@ -7,17 +7,20 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class AjaxController1 extends HttpServlet {
+public class AjaxServletIdCheck extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String str = request.getParameter("input");
+		String checkId = request.getParameter("checkId");
+		boolean result = new MemberDao().checkId(checkId);
+
+		if(result) {
+			response.getWriter().print("idN");
+		} else {
+			response.getWriter().print("idY");
+		}
 		
-		String responseDate = "입력된 값 : " + str + ", 길이 : " + str.length()	;
 		
-		// 응답데이터 돌려주기
-		response.setContentType("text/html");
-		response.getWriter().print(responseDate);
 	}
 
 }
