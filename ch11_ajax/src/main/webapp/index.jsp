@@ -270,6 +270,12 @@
     
     ID : <input name="searchId">&emsp; <input type="button" id="btn5" value="전송"><br>
     
+    <hr>
+    
+    <h3>4. </h3><br>
+    
+
+    
     
     
     

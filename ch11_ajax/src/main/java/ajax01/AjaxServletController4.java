@@ -4,6 +4,8 @@ import java.io.IOException;
 
 import org.json.simple.JSONObject;
 
+import com.google.gson.Gson;
+
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -28,4 +30,12 @@ public class AjaxServletController4 extends HttpServlet {
 		jObj.put("userId", bean.getId());
 		jObj.put("userName", bean.getName());
 	}
+	
+		// 3. 2번을 간단하게 하는 방법 : GSON 사용
+		// MVNREPOSITORY에서 다운로드하여 lib에 넣기
+	
+		/*
+		 * Gson gson = new Gson();
+		 * gson.toJson(bean)
+		 */
 }
